@@ -1,6 +1,6 @@
 variable "GOOGLE_PROJECT" {
   type        = string
-  default     = "marine-bay-431217-u6"
+  default     = var.GOOGLE_PROJECT
   description = "tf-gke-project"
 }
 
