@@ -1,6 +1,6 @@
 variable "GOOGLE_PROJECT" {
   type        = string
-  default     = var.GOOGLE_PROJECT
+  default     = "your-gcp-project-id"
   description = "tf-gke-project"
 }
 
