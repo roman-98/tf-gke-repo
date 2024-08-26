@@ -10,8 +10,15 @@ variable "GOOGLE_REGION" {
   description = "us-central1"
 }
 
+variable "GKE_MACHINE_TYPE" {
+  type        = string
+  default     = "g1-small"
+  description = "Machine type"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   default     = "2"
   description = "node count"
 }
+
