@@ -1,24 +1,34 @@
 variable "GOOGLE_PROJECT" {
-  type        = string
-  default     = "your-gcp-project-id"
-  description = "tf-gke-project"
+  type    = string
+  default = "tf-gke-project"
 }
 
 variable "GOOGLE_REGION" {
-  type        = string
-  default     = "us-central1-c"
-  description = "us-central1"
+  type    = string
+  default = "us-central1-c"
 }
 
-variable "GKE_MACHINE_TYPE" {
-  type        = string
-  default     = "g1-small"
-  description = "Machine type"
+variable "GITHUB_OWNER" {
+  type    = string
+  default = "roman-98"
 }
 
-variable "GKE_NUM_NODES" {
-  type        = number
-  default     = "2"
-  description = "node count"
+variable "GITHUB_REPO" {
+  type    = string
+  default = "telebot"
+}
+
+variable "GITHUB_TOKEN" {
+  type = string
+}
+
+variable "FLUX_GITHUB_REPO" {
+  type    = string
+  default = "flux-gitops"
+}
+
+variable "FLUX_GITHUB_TARGET_PATH" {
+  type    = string
+  default = "clusters"
 }
 
